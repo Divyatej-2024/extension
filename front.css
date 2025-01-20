@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+.container {
+  background-image: linear-gradient(
+      135deg,
+      rgba(52, 152, 219, 0.5) 25%,
+      rgba(243, 65, 65, 0.4) 40%,
+      rgba(234,24,214,0.2) 45%
+    ),
+    url('gifs/beach.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50%;
+  overflow: hidden;
+}
+
+.logo {
+  padding: 50px;
+  width: 300px;
+  margin: auto;
+}
+
+.container img.logo,
+.footer,
+.container p {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Social media cards*/
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 230px;
+}
+
+.card {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+i{
+    background-color: aqua;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: lighter;
+  font-size: 50px;
+  margin-top: -80px;
+  height: 40px;
+  color: black;
+}
+
+.card .card_title a {
+  color: black;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* For small screens*/
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+.footer,
+.footer a {
+  background-color: black;
+  color: white;
+}

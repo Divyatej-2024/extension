@@ -1,0 +1,14 @@
+
+{
+    "manifest_version": 3,
+    "name": "songs and podcasts",
+    "version": "1.0.0",
+    "description": "Quick access to songs",
+    
+"action":
+{
+        "default_icon": "gifs/logo.png",
+        "default_title": "songs",
+        "default_popup": "songs-popup.html"
+    }
+}
